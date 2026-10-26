@@ -22,17 +22,33 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
-  background-color: #0d0e12;
+  padding: 10px 20px;
+  background-color: #18181b; /* Mempertahankan warna gelap milikmu */
 }
 
 .global-header .logo {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #2b7fff;
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+/* Warna merah untuk ikon api saja */
+.fire-icon {
+  color: #2b7fff;
+}
+
+/* Warna ungu untuk teks Fandom */
+.logo-text {
+  color: #efeff1;
+}
+
+/* Kelompok Kanan (Search Bar + Sign In + Create Account) */
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Jarak antar elemen */
 }
 
 .search-box {
@@ -50,17 +66,16 @@ body {
 
 .search-box input {
   padding: 6px 12px 6px 30px;
-  width: 280px;
+  width: 260px;
   border-radius: 4px;
   border: 1px solid #3a3a3d;
-  background-color: #18181b;
+  background-color: #0e0e10; /* Mempertahankan warna gelap */
   color: #fff;
   outline: none;
 }
 
-.global-header .user-actions button {
+.user-actions button {
   padding: 6px 14px;
-  margin-left: 8px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.85rem;
@@ -74,9 +89,9 @@ body {
 }
 
 .btn-primary {
-  background-color: #2b7fff;
+  background-color: #2b7fff; /* Mempertahankan warna tombol biru milikmu */
   color: #fff;
-  border: rgb(255, 9, 0);
+  border: none;
 }
 
 .community-banner {
