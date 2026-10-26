@@ -161,49 +161,61 @@ body {
   padding: 0 15px;
 }
 
-.main-layout {
-  grid-template-columns: 1fr 300px;
-  gap: 20px;
+.card {
+  background-color: #18181b;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  border: 1px solid #26262c;
 }
 
 /* --- CONTENT (Blox Fruits Style) --- */
 
+.welcome-box h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
 .welcome-banner {
   height: 180px;
-  background: linear-gradient(135deg, #1e0538 0%, #0c2b5e 50%, #2b083b 100%);
+  background: linear-gradient(135deg, #100628 0%, #0c2b5e 50%, #1a0428 100%);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 8px;
-  margin: 15px 0;
+  margin: 10px 0;
   border: 2px solid #5a22c9;
-  box-shadow: 0 0 20px rgba(90, 34, 201, 0.4);
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 0 15px rgba(90, 34, 201, 0.3);
+}
+
+.banner-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-logo-icon {
+  font-size: 2.2rem;
+  color: #00d2ff;
 }
 
 .welcome-banner h3 {
   font-size: 2.2rem;
   font-weight: 900;
-  letter-spacing: 3px;
-  text-transform: uppercase;
+  letter-spacing: 2px;
   color: #fff;
   text-shadow:
     0 0 10px #00d2ff,
-    0 0 20px #00d2ff,
-    0 0 40px #0072ff;
+    0 0 20px #00d2ff;
   font-family: "Arial Black", sans-serif;
 }
 
 .stats-text {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   text-align: center;
   color: #a2c8ff;
-  margin-top: 6px;
-  letter-spacing: 1px;
+  margin-top: 12px;
 }
-
 /* Update Highlights */
 .updates-grid {
   display: flex;
