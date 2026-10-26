@@ -1,0 +1,270 @@
+/* Reset Dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0e0e10;
+  color: #efeff1;
+}
+
+/* --- HEADER (Pokémon Style) --- */
+.site-header {
+  background-color: #1f1f23;
+  border-bottom: 2px solid #2d2d31;
+}
+
+/* 1. Global Header Top Bar */
+.global-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  background-color: #0d0e12;
+}
+
+.global-header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #2b7fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 10px;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.search-box input {
+  padding: 6px 12px 6px 30px;
+  width: 280px;
+  border-radius: 4px;
+  border: 1px solid #3a3a3d;
+  background-color: #18181b;
+  color: #fff;
+  outline: none;
+}
+
+.global-header .user-actions button {
+  padding: 6px 14px;
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.btn-link {
+  background: transparent;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #2b7fff;
+  color: #fff;
+  border: rgb(255, 9, 0);
+}
+
+.community-banner {
+  padding: 15px 20px;
+  background-color: #26262c;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Membuat konten banner rata tengah secara horizontal */
+  text-align: center;
+}
+
+.banner-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px; /* Menyesuaikan lebar maksimum dengan isi konten bawah */
+  margin-bottom: 10px;
+}
+
+.wiki-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.zelda-icon {
+  font-size: 2rem;
+  color: #ffd700; /* Warna Emas Zelda */
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+}
+
+.community-nav a {
+  color: #adadb8;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 1100px;
+  text-align: left; /* Biar teks menu "Explore, Franchise, dll" sejajar dari kiri */
+}
+
+.sub-nav {
+  display: flex;
+  justify-content: center; /* Membuat tombol Home, Games, dll berada di tengah */
+  background-color: #000;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.sub-nav a {
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.sub-nav a.active,
+.sub-nav a:hover {
+  background-color: #2b7fff;
+}
+
+/* --- LAYOUT UTAMA --- */
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.main-layout {
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+}
+
+/* --- CONTENT (Blox Fruits Style) --- */
+
+.welcome-banner {
+  height: 180px;
+  background: linear-gradient(135deg, #1e0538 0%, #0c2b5e 50%, #2b083b 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 15px 0;
+  border: 2px solid #5a22c9;
+  box-shadow: 0 0 20px rgba(90, 34, 201, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-banner h3 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow:
+    0 0 10px #00d2ff,
+    0 0 20px #00d2ff,
+    0 0 40px #0072ff;
+  font-family: "Arial Black", sans-serif;
+}
+
+.stats-text {
+  font-size: 0.95rem;
+  text-align: center;
+  color: #a2c8ff;
+  margin-top: 6px;
+  letter-spacing: 1px;
+}
+
+/* Update Highlights */
+.updates-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.update-card {
+  flex: 1;
+  text-align: center;
+}
+
+.update-card .thumb {
+  width: 100%;
+  height: 120px;
+  border-radius: 6px;
+  overflow: hidden; /* Mencegah gambar keluar dari bingkai */
+  margin-bottom: 8px;
+  border: 1px solid #3a3a45;
+}
+
+.update-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Menyesuaikan ukuran gambar secara otomatis */
+}
+
+/* --- FOOTER (Gamer Robot Style) --- */
+.site-footer {
+  background-color: #e5e5e5;
+  color: #111;
+  margin-top: 40px;
+}
+
+.upper-footer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.footer-col h5 {
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex; /* Mengubah layout list jadi menyamping (horizontal) */
+  gap: 15px; /* Memberi jarak antar menu */
+  padding: 0;
+  margin-top: 8px;
+}
+
+.footer-col ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 5px;
+}
+
+.subscribe-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subscribe-form button {
+  padding: 8px 12px;
+  background-color: #ffb703;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
