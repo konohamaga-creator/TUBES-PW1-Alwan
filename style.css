@@ -80,21 +80,26 @@ body {
 }
 
 .community-banner {
-  padding: 15px 20px;
-  background-color: #26262c;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Membuat konten banner rata tengah secara horizontal */
-  text-align: center;
+  padding: 15px 40px;
+  background-color: #18181c;
+  border-top: 1px solid #26262c;
+  border-bottom: 1px solid #26262c;
 }
 
-.banner-info {
+.community-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1100px; /* Menyesuaikan lebar maksimum dengan isi konten bawah */
-  margin-bottom: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sisi Kiri: Menumpuk Title di Atas, Navigasi Dropdown di Bawah */
+.community-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .wiki-title {
@@ -103,20 +108,62 @@ body {
   gap: 10px;
 }
 
+.wiki-title h1 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+
 .zelda-icon {
-  font-size: 2rem;
-  color: #ffd700; /* Warna Emas Zelda */
-  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.8));
+  font-size: 1.8rem;
+  color: #ffd700;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
+}
+
+.community-nav {
+  display: flex;
+  gap: 18px;
 }
 
 .community-nav a {
   color: #adadb8;
   text-decoration: none;
-  margin-right: 15px;
   font-size: 0.9rem;
-  width: 100%;
-  max-width: 1100px;
-  text-align: left; /* Biar teks menu "Explore, Franchise, dll" sejajar dari kiri */
+}
+
+.community-nav a:hover {
+  color: #fff;
+}
+
+/* Sisi Kanan: Horizontal dengan pembatas */
+.community-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stat-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stat-num {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+  color: #adadb8;
+}
+
+/* Garis Pembatas Vertikal */
+.divider {
+  color: #4a4a52;
+  font-size: 1.1rem;
+  user-select: none;
 }
 
 .sub-nav {
