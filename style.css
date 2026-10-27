@@ -27,19 +27,24 @@ body {
 }
 
 .global-header .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  user-select: none;
 }
 
-.fire-icon {
-  color: #2b7fff;
+.logo-icon {
+  color: #2b7fff; /* Warna biru aksen utama website */
+  font-size: 1.4rem;
+  filter: drop-shadow(0 0 6px rgba(43, 127, 255, 0.6)); /* Efek glow lembut */
 }
 
 .logo-text {
-  color: #efeff1;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  font-family: "Arial Black", sans-serif; /* membuat font sedikit lebih tegas */
 }
 
 /* Kelompok Kanan (Search Bar + Sign In + Create Account) */
@@ -271,9 +276,10 @@ body {
 }
 
 .stats-text {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
   text-align: center;
-  color: #a2c8ff;
+  color: #d1d5db;
   margin-top: 12px;
 }
 /* Pengaturan Jarak Judul Update Games */
