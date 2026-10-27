@@ -278,10 +278,16 @@ body {
   color: #a2c8ff;
   margin-top: 12px;
 }
-/* Update Highlights */
+/* Pengaturan Jarak Judul Update Games */
+.updates-section h3 {
+  margin-bottom: 28px; /* Memberi jarak cukup renggang antara teks judul & gambar */
+  font-size: 1.2rem;
+}
+
+/* Memastikan grid gambar tetap rapi */
 .updates-grid {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .update-card {
@@ -291,9 +297,9 @@ body {
 
 .update-card .thumb {
   width: 100%;
-  height: 120px;
+  height: 130px;
   border-radius: 6px;
-  overflow: hidden; /* Mencegah gambar keluar dari bingkai */
+  overflow: hidden;
   margin-bottom: 8px;
   border: 1px solid #3a3a45;
 }
@@ -301,7 +307,7 @@ body {
 .update-card .thumb img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Menyesuaikan ukuran gambar secara otomatis */
+  object-fit: cover;
 }
 
 /* --- FOOTER (Gamer Robot Style) --- */
