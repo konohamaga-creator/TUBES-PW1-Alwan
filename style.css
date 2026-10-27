@@ -23,7 +23,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #18181b; /* Mempertahankan warna gelap milikmu */
+  background-color: #18181b;
 }
 
 .global-header .logo {
@@ -34,12 +34,10 @@ body {
   gap: 8px;
 }
 
-/* Warna merah untuk ikon api saja */
 .fire-icon {
   color: #2b7fff;
 }
 
-/* Warna ungu untuk teks Fandom */
 .logo-text {
   color: #efeff1;
 }
@@ -312,8 +310,9 @@ body {
 
 /* --- FOOTER (Gamer Robot Style) --- */
 .site-footer {
-  background-color: #e5e5e5;
-  color: #111;
+  background-color: #18181b;
+  color: #efeff1;
+  border-top: 1px solid #2d2d31;
   margin-top: 40px;
 }
 
@@ -338,7 +337,7 @@ body {
 }
 
 .footer-col ul li a {
-  color: #333;
+  color: #adadb8;
   text-decoration: none;
   font-size: 0.9rem;
   line-height: 1.8;
