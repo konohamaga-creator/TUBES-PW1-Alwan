@@ -242,21 +242,21 @@ body {
 }
 
 .welcome-banner {
-  height: 180px;
-  background: linear-gradient(135deg, #100628 0%, #0c2b5e 50%, #1a0428 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  height: 220px; /* Sedikit ditambahkan tingginya agar artwork lebih jelas */
   border-radius: 8px;
-  margin: 10px 0;
+  margin: 15px 0;
   border: 2px solid #5a22c9;
-  box-shadow: 0 0 15px rgba(90, 34, 201, 0.3);
+  box-shadow: 0 0 15px rgba(90, 34, 201, 0.4);
+  overflow: hidden;
 }
 
-.banner-inner {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+/* Gambar Artwork Game */
+.hero-artwork {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gambar akan menyesuaikan bingkai tanpa terdistorsi */
+  display: block;
 }
 
 .main-logo-icon {
